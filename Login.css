@@ -1,0 +1,46 @@
+.login-container {
+  text-align: center;
+  margin-top: 80px;
+  font-family: Arial, sans-serif;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+}
+
+.login-container input {
+  width: 220px;
+  padding: 8px;
+  margin: 6px 0;
+
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.login-container button {
+  width: 240px;
+  padding: 8px;
+
+  margin-top: 10px;
+  cursor: pointer;
+
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+}
+
+.login-container button:hover {
+  background-color: #333;
+}
+.signup-text {
+  margin-top: 15px;
+  font-size: 14px;
+  color: gray;
+}
+
+.signup-text span {
+  color: blue;
+  cursor: pointer;
+  font-weight: bold;
+}

@@ -1,0 +1,122 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: var(--bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.login-page::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  right: -20%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.login-page::after {
+  content: '';
+  position: absolute;
+  bottom: -20%;
+  left: -15%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.login-container {
+  position: relative;
+  z-index: 1;
+  background: var(--surface);
+  padding: 48px 40px;
+  border-radius: var(--radius-xl);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border);
+}
+
+.login-brand {
+  font-size: 1.75rem;
+  font-weight: 800;
+  background: var(--gradient-hero);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+}
+
+.login-container h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-family: var(--font);
+  font-size: 0.95rem;
+  margin-bottom: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.login-container input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+.signin-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+  background: var(--gradient-hero);
+  border: none;
+  border-radius: var(--radius-md);
+  color: white;
+  font-family: var(--font);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
+}
+
+.signin-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.45);
+}
+
+.signin-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.register-link {
+  margin-top: 24px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.register-link span {
+  color: var(--primary);
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.register-link span:hover {
+  color: var(--primary-dark);
+}
